@@ -8,7 +8,9 @@
 
 You receive the quarterly advertising export of a company. Your job: write a Python program that reads this data, computes the performance indicators, and quizzes the player on what the numbers actually say.
 
-The file `campaigns_X.csv` assigned to you is a raw export, exactly as it comes out of a real tool. It is not clean. That is the point of the exercise.
+Your repository already contains three datasets in `final-project/`: `campaigns_A.csv`, `campaigns_B.csv` and `campaigns_C.csv`. **Your teacher tells you which one is yours. Use only that one.** They hold different numbers and give different answers, so working from a neighbour's file gives you the wrong result.
+
+The file is a raw export, exactly as it comes out of a real tool. It is not clean. That is the point of the exercise.
 
 ---
 
@@ -71,7 +73,7 @@ You will use ChatGPT, Copilot or Gemini. This is expected, encouraged, and grade
 
 ## Deliverables
 
-In your repository, at root level:
+In the `final-project/` folder of your repository, next to the datasets:
 
 | File | Content |
 |---|---|
