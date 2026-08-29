@@ -1,0 +1,35 @@
+# Teacher material must never reach this repository
+_teacher/
+_correction/
+*Teacher_Solutions*
+*ANSWER_KEY*
+*CORRIGE*
+solution_reference.py
+reference_solution.py
+generator.py
+generateur.py
+
+# Course framework and decks stay out of the student repository
+*.pptx
+*.key
+COURSE_FRAMEWORK*
+SESSION_PLAN*
+_archive*
+_qa/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Editors and systems
+.DS_Store
+.vscode/settings.json
+.idea/
+
+# Files produced by running the examples
+examples/files/example_result.csv
+exercises/sorted_names.txt
+bonus/machine_learning/histogram.png

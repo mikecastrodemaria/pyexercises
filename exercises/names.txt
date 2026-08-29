@@ -1,0 +1,10 @@
+ada LOVELACE
+grace hopper
+
+  alan TURING
+katherine JOHNSON
+margaret hamilton
+  linus torvalds
+GUIDO van rossum
+
+barbara LISKOV
