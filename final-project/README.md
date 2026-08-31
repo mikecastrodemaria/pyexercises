@@ -59,7 +59,7 @@ These three rules are part of the assignment. A program that ignores them return
 
 ## How to work: the four steps
 
-You will use ChatGPT, Copilot or Gemini. This is expected, encouraged, and graded. What is graded is not the code the AI writes, it is your ability to steer it. Apply these four steps to every function you write.
+You will use ChatGPT, GitHub Copilot, Claude, Gemini, Mistral or DeepSeek, Claude, Gemini, Mistral or DeepSeek. This is expected, encouraged, and graded. What is graded is not the code the AI writes, it is your ability to steer it. Apply these four steps to every function you write.
 
 **1. Ask.** Describe to the AI what the function must do, what goes in, what comes out. A vague request produces vague code.
 

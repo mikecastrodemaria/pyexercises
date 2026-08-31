@@ -13,6 +13,9 @@ Everything you need for the Python Programming course. No installation required.
 
 That is it. You now have your own copy of the course and a working environment.
 
+During session 2, follow **`session-2/README.md`**. It lists the eight steps and
+comes with a script that checks your environment for you.
+
 > Do not work in this repository. Work in the copy you just created. If you are
 > not sure which one you are in, look at the name at the top of the page.
 
@@ -26,6 +29,7 @@ That is it. You now have your own copy of the course and a working environment.
 | `exercises/` | The exercises of labs 1 to 3. The task, not the answer |
 | `final-project/` | The brief and the datasets of the graded project |
 | `bonus/` | Optional material. Not covered in class, not graded |
+| `session-2/` | The session 2 checklist, the environment check script and the Colab fallback |
 
 Slides point to files using this structure. When a slide says
 `pyexercises / examples/lists/indexing.py`, open that file in your Codespace.
@@ -47,7 +51,7 @@ the night before the deadline tells its own story.
 
 ## How we work with AI
 
-You will use ChatGPT, Copilot or Gemini. This is expected, and it is graded.
+You will use ChatGPT, GitHub Copilot, Claude, Gemini, Mistral or DeepSeek, Claude, Gemini, Mistral or DeepSeek. This is expected, and it is graded.
 What is graded is not the code the AI writes, it is your ability to steer it.
 Four steps, on every function you write:
 
