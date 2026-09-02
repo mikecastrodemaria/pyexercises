@@ -129,6 +129,23 @@ Two students submitting the same code with different datasets get different resu
 
 ---
 
+## Bonus, up to 2 points on top of the 20
+
+Optional. Nobody is penalised for skipping it, and it never compensates a program that does not run.
+
+Your program already has an IN box, a PROCESS box and an OUT box. The bonus only changes the last one: instead of printing in a terminal, the same code answers on a web page anyone can open.
+
+| Criterion | Points | What we look at |
+|---|---|---|
+| A working Gradio interface | 1 | The user uploads a campaign export and reads the answers on the page. Your existing functions are reused, not rewritten |
+| A published link | 1 | The Space runs, the link is in your repository README, and we can click it without asking you for anything |
+
+How: wrap your existing audit function in `gr.Interface(...)`, then publish it on a free Hugging Face Space (CPU Basic, no card, no cost). Covered in online session 4.
+
+Two things that cost the bonus: a page that works only on your machine, and an interface built around code that crashes on the incomplete row.
+
+---
+
 ## Optional extras
 
 - Handle the case where the player types an answer in an unexpected format
