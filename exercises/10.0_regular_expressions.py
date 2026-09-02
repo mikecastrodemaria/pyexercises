@@ -1,27 +1,31 @@
-"""Exercise 10.0 — Regular expressions (bonus, not graded)
+"""Exercise 10.0 — Checking the shape of text (bonus, not graded)
 
-Goal
-    Check the shape of a piece of text: is this really an email address?
+WHAT THE PROGRAM MUST DO
+    Validate three pieces of information typed by the user, and only save them when all
+    three are acceptable.
 
-Task
-    Search for a word inside a sentence using the re module, and say whether
-    it was found.
+ANSWER THESE FIRST, in comments
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. What are your three fields, and what makes a value acceptable for each? Write the
+       rule in plain English before writing any pattern.
 
-Improved version
-    Write three validation functions:
-        a name contains only letters and spaces
-        an email looks like something@something.something
-        a student number is exactly eight digits
-    Ask the user for the three values, validate each one, and only save them
-    to a CSV file when all three are acceptable.
+WHAT THE AI CANNOT KNOW
+    Your three rules. "A valid email" is not a rule, it is a wish. Say what you accept
+    and what you reject, and be ready to defend a borderline case.
 
-Hints
-    import re, then re.search(pattern, text) or re.match(pattern, text).
-    A pattern is a small language of its own. Ask the AI to explain the
-    pattern it gives you, line by line, before you use it.
+WHAT TO WATCH
+    An assistant will hand you a pattern that looks like line noise. Do not accept it
+    until it has explained it to you piece by piece, and you have written that
+    explanation in your own words above it.
 
-Four steps
-    Ask, read, adapt, check. Test with a deliberately wrong email.
+CHECK IT YOURSELF
+    For each field, prepare one value that must pass and two that must fail. Run all
+    nine. Any surprise goes in a comment.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO: search for a word, then validate three kinds of value
+# Your code below

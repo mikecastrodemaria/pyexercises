@@ -1,23 +1,24 @@
 """Exercise 8.1 — Bitwise operators (bonus, not graded)
 
-Goal
-    Understand how permissions are stored as bits, the way Linux and macOS do it.
+WHAT THE PROGRAM MUST DO
+    Represent a set of permissions as bits, combine two of them, test whether a third is
+    present, then add it and remove one.
 
-Task
-    Define READ, WRITE and EXECUTE as 4, 2 and 1. Combine read and write into
-    one value. Test whether that value includes execute. Then add execute,
-    and remove write.
+ANSWER THESE FIRST, in comments
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. What are your permissions about? Not files: invent a set from your own field,
+       such as who may view, edit and publish a campaign.
 
-Improved version
-    Write a function that turns a permission value into a readable string,
-    such as "rw-" or "r-x".
+WHAT THE AI CANNOT KNOW
+    Your permission set and what each one means in your context.
 
-Hints
-    | adds a flag, & tests one, ~ inverts. bin(value) shows the bits.
-    See ../examples/operators/bitwise.py
+CHECK IT YOURSELF
+    Display the value in binary at each step and read the bits yourself.
 
-Four steps
-    Ask, read, adapt, check.
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO: combine, test, add and remove permissions
+# Your code below

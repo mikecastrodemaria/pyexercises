@@ -1,29 +1,33 @@
-"""Exercise 2.1 — String manipulation
+"""Exercise 2.1 — Transforming text (homework)
 
-Goal
-    Transform text, which is most of what a program does with real data.
+WHAT THE PROGRAM MUST DO
+    Ask the user for a sentence, then display four different transformations of it.
 
-In class
-    Join two strings, and repeat one of them several times.
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. Which four transformations did you choose, and in what situation would each of
+       them be useful? One line each.
 
-Improved version
-    Ask the user for a sentence, then display it:
-        in upper case
-        in lower case
-        with the number of characters it contains
-        with the first and last word
+WHAT THE AI CANNOT KNOW
+    Your four transformations. Pick them yourself. Open ../examples/strings/string_methods.py
+    to see what is available, then choose, then justify.
 
-Hints
-    "a" + "b" joins, "a" * 3 repeats.
-    .upper() .lower() .strip() .split() are the methods you need.
-    len() counts. A split gives a list, and [0] and [-1] are its ends.
-    See ../examples/strings/string_methods.py
+    A transformation that produces the same thing as another one does not count as two.
 
-Four steps
-    Ask, read, adapt, check. Test with a sentence that has spaces at both ends.
+CHECK IT YOURSELF
+    Run it with a sentence that has spaces at both ends and a capital in the middle.
+    For each of your four results, say in a comment whether it is what you expected.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: join two strings, and repeat one of them
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. My four transformations, and when each is useful:
 
 
-# TODO 2 (improved version): transform a sentence given by the user
+# Your code below

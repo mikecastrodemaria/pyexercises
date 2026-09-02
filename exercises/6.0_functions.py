@@ -1,27 +1,35 @@
-"""Exercise 6.0 — Functions
+"""Exercise 6.0 — Naming a piece of work
 
-Goal
-    Give a name to a piece of work so you can reuse it.
+WHAT THE PROGRAM MUST DO
+    Write a function that computes something useful about the list you built in exercise
+    4.0, then call it three times with different inputs and display the three results.
 
-In class
-    Write a function that prints a greeting, then call it.
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?  (what your function receives)
+    2. What happens to it?
+    3. What comes out?  (what your function returns)
+    4. What is your function called, and does its name say what it does without reading
+       the code?
 
-Improved version
-    Write a function that takes two numbers, returns their sum, and does not
-    print anything itself. Call it three times with different values and
-    print the results.
+WHAT THE AI CANNOT KNOW
+    What is worth computing about your data, and what to call it. A function named
+    "process" or "do_stuff" fails this exercise even if it works.
 
-Hints
-    def name(parameters): defines. name(values) calls.
-    return sends a value back. print only displays.
-    A function that computes should return, not print. That way you can reuse it.
-    See ../examples/functions/define_and_call.py
+    Your function must RETURN its result, not print it. Find out why that difference
+    matters and write the reason in a comment. It is the whole point of the exercise.
 
-Four steps
-    Ask, read, adapt, check.
+CHECK IT YOURSELF
+    Call your function with an empty list. Note what happens. Then decide whether that
+    behaviour is acceptable, and say so in a comment.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: a function that prints a greeting
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. My function name, and why return rather than print:
 
 
-# TODO 2 (improved version): a function that RETURNS the sum of two numbers
+# Your code below

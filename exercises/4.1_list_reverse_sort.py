@@ -1,30 +1,34 @@
-"""Exercise 4.1 — Reversing and sorting a list
+"""Exercise 4.1 — Reordering without losing the original (homework)
 
-Goal
-    Change the order of a list without losing the original.
+WHAT THE PROGRAM MUST DO
+    Starting from the list you built in exercise 4.0, display it in four different
+    orders, and prove at the end that the original list has not been damaged.
 
-In class
-    Create a list of numbers and display it in reverse order.
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. Which four orders did you choose, and in which of them is your original list
+       modified rather than copied?
 
-Improved version
-    Display, one after the other:
-        the original list
-        the same list reversed
-        the same list sorted, smallest first
-        the same list sorted, largest first
-    The original list must still be intact at the end.
+WHAT THE AI CANNOT KNOW
+    That your original must survive. Some ways of reordering a list change it in place,
+    others return a new one. Find out which is which, and say so in your comments.
+    That distinction is the entire exercise.
 
-Hints
-    .reverse() and .sort() change the list itself.
-    sorted() and list[::-1] return a new list and leave the original alone.
-    That difference is the whole point of this exercise.
-    See ../examples/lists/list_methods.py
+CHECK IT YOURSELF
+    The last line of your program must display the original list. Compare it, item by
+    item, with what you wrote in 4.0. If it has moved, your program is wrong even
+    though it ran.
 
-Four steps
-    Ask, read, adapt, check. Print the original at the very end to prove it is intact.
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: display a list in reverse order
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. My four orders, and which ones modify the original:
 
 
-# TODO 2 (improved version): the four views, with the original left untouched
+# Your code below

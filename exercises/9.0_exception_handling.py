@@ -1,31 +1,37 @@
-"""Exercise 9.0 — Handling errors
+"""Exercise 9.0 — Surviving what you did not expect
 
-Goal
-    Keep the program alive when something goes wrong. You will need this
-    in the final project, where two campaigns have zero conversions.
+Useful for the final exam: two campaigns in the exam dataset have zero conversions.
 
-Task
-    Ask the user for a number and display it. If the user types something
-    that is not a number, say so instead of crashing.
+WHAT THE PROGRAM MUST DO
+    Ask the user for a number, divide something by it, and keep running whatever the
+    user types. Never crash.
 
-Improved version
-    Also divide 10 by that number, and handle two different problems
-    separately:
-        ValueError, when the text is not a number
-        ZeroDivisionError, when the number is zero
-    Then keep asking until the user gives an acceptable value.
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. Which two different failures can happen here, and should they produce the same
+       message to the user? Decide before coding.
 
-Hints
-    try: the risky code
-    except ValueError: what to do in that case
-    except ZeroDivisionError: what to do in that other case
-    Catching the specific error is better than catching everything.
+WHAT THE AI CANNOT KNOW
+    Your answer to question 4, and how many attempts you allow before giving up.
 
-Four steps
-    Ask, read, adapt, check. Test with "abc", with 0, and with 5.
+    An assistant will often propose catching every error at once. Find out why catching
+    each failure separately is better, and write the reason in a comment.
+
+CHECK IT YOURSELF
+    Run it with: a normal number, then zero, then the word "abc", then an empty line.
+    Four runs, four behaviours, all described in a comment. If any of them stopped your
+    program, it is not finished.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: read a number, and survive a wrong entry
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. The two failures, and whether they deserve the same message:
 
 
-# TODO 2 (improved version): divide, handle both errors, keep asking until it works
+# Your code below

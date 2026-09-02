@@ -1,24 +1,25 @@
 """Exercise 8.0 — Operators (bonus, not graded)
 
-Goal
-    Get comfortable with assignment, comparison and logical operators.
+WHAT THE PROGRAM MUST DO
+    Take two values of your choice and display, as a readable table, the result of every
+    comparison between them and of the logical combinations of those results.
 
-Task
-    Take two numbers. Display the result of every comparison between them,
-    then combine those results with and, or and not, and display those too.
+ANSWER THESE FIRST, in comments
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. Which two values did you pick, and which comparison result surprised you?
 
-Improved version
-    Ask the user for the two numbers, and present the results as a readable
-    table rather than a list of raw True and False.
+WHAT THE AI CANNOT KNOW
+    Your two values. Pick a pair where the answer is not obvious: two strings with
+    different capitalisation, a number and the same number written as text, or zero and
+    an empty string.
 
-Hints
-    ==, !=, <, >, <=, >= produce True or False.
-    and, or, not combine them.
-    f"{label:<20} {value}" lines up a column.
-    See ../examples/operators/comparison.py and logical.py
+CHECK IT YOURSELF
+    Predict each result before running. Count how many you got right.
 
-Four steps
-    Ask, read, adapt, check.
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO: compare two numbers, then combine the results
+# Your code below

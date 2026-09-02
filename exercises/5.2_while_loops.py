@@ -1,27 +1,37 @@
-"""Exercise 5.2 — While loops
+"""Exercise 5.2 — Repeating until something changes
 
-Goal
-    Repeat until something changes, when you do not know how many times.
+WHAT THE PROGRAM MUST DO
+    Keep asking the user something until a condition you define is met, then display a
+    summary of what happened during the loop.
 
-In class
-    Count from 1 to 5 with a while loop.
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. What is your stop condition, what is your maximum number of attempts, and what
+       does your summary contain?
 
-Improved version
-    Ask the user, again and again, whether they want to continue.
-    Stop when they answer no. Count how many times they said yes,
-    and display that count at the end.
+WHAT THE AI CANNOT KNOW
+    Your stop condition and your safety limit. An assistant asked for a while loop will
+    write one that can run for ever if the user never gives the expected answer. Decide
+    how many attempts you allow, and what your program does when that limit is reached.
 
-Hints
-    Something inside the loop must eventually make the test false,
-    otherwise the program never stops.
-    .strip().lower() on the answer avoids "Yes" and " yes " being rejected.
-    See ../examples/loops/while_loop.py and early_exit.py
+    Accepting "Yes", "yes" and " yes " as the same answer is your decision too. Make it
+    and write it down.
 
-Four steps
-    Ask, read, adapt, check. Try answering with capitals and extra spaces.
+CHECK IT YOURSELF
+    Run it and never give the expected answer. If your program is still running after
+    your stated maximum, it is wrong. Then run it and answer with capitals and extra
+    spaces.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: count from 1 to 5
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. My stop condition, my attempt limit, my summary:
 
 
-# TODO 2 (improved version): keep asking until the user says no, and count the yeses
+# Your code below

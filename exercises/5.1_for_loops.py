@@ -1,26 +1,33 @@
-"""Exercise 5.1 — For loops
+"""Exercise 5.1 — Doing the same thing to every item
 
-Goal
-    Repeat work once per item.
+WHAT THE PROGRAM MUST DO
+    Take the list you built in exercise 4.0 and, for every item, display a line that
+    combines the item, its position, and something computed about it.
 
-In class
-    Print five numbered lines using range().
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. What did you compute for each item, and what does the reader learn from that line?
 
-Improved version
-    Loop over a list of names and greet each person by name, with their
-    position in the list.
+WHAT THE AI CANNOT KNOW
+    Your list from 4.0, and what is worth computing about its items. Length of the name,
+    share of a total, position in a ranking, whether the item passes a threshold you set.
+    Open your 4.0 file, copy the list across, and say in a comment what you decided.
 
-Hints
-    for value in range(5): repeats five times.
-    for name in names: takes each item in turn.
-    enumerate(names, start=1) gives the position as well.
-    See ../examples/loops/for_loop.py
+CHECK IT YOURSELF
+    Count the lines your program printed. There must be exactly as many as items in your
+    list. If there is one more or one less, you have an off-by-one, and it is worth
+    understanding now rather than in the exam.
 
-Four steps
-    Ask, read, adapt, check.
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: five numbered lines
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. What I compute for each item, and why it is worth showing:
 
 
-# TODO 2 (improved version): greet every name in a list, with its position
+# Your code below

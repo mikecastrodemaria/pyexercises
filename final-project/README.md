@@ -57,6 +57,36 @@ These three rules are part of the assignment. A program that ignores them return
 
 ---
 
+## Answer these before you ask an AI anything
+
+Write your answers as comments at the top of `campaign_audit.py`. They are graded, and
+they are what makes the difference between building a program and pasting one.
+
+1. **What goes in?** Open your dataset and describe it: how many rows, which columns,
+   what separator, how the amounts are written. Do not guess, look.
+2. **What happens to it?** List the steps, in order, in plain English. One line each.
+3. **What comes out?** Describe both outputs: what the player sees on screen, and what
+   ends up in `result.csv`.
+4. **What could go wrong?** Read your file again and list every row that is not like the
+   others. There are at least three. Say what your program will do with each.
+
+## What an AI assistant cannot know
+
+Paste this brief into ChatGPT, Copilot, Claude, Gemini, Mistral or DeepSeek and it will
+happily write you a program. That program will not work, and it is worth understanding
+why before you start.
+
+- **It has not seen your file.** It does not know the separator, the column names, the
+  way the amounts are written, or which variant you were given. It will invent all of it,
+  confidently.
+- **It does not know which rows are broken.** Two campaigns have no conversions, one row
+  is incomplete. It cannot know that unless you tell it.
+- **It cannot check the result.** Only you can compute one value by hand and compare.
+
+So the work is not writing the program. It is describing the situation precisely enough
+that a program can be written, then verifying that it was. That is the same work you will
+do the day you brief a developer, or an agency.
+
 ## How to work: the four steps
 
 You will use ChatGPT, GitHub Copilot, Claude, Gemini, Mistral or DeepSeek, Claude, Gemini, Mistral or DeepSeek. This is expected, encouraged, and graded. What is graded is not the code the AI writes, it is your ability to steer it. Apply these four steps to every function you write.
@@ -77,7 +107,7 @@ In the `final-project/` folder of your repository, next to the datasets:
 
 | File | Content |
 |---|---|
-| `campaign_audit.py` | Your program, commented in your own words |
+| `campaign_audit.py` | Your program, commented in your own words, with the four answers above at the top |
 | `campaigns_X.csv` | The dataset assigned to you |
 | `result.csv` | One example of the output your program produces |
 | `CONVERSATION.md` | Your exchanges with the AI: what you asked, what it answered, what you had to fix |
@@ -92,7 +122,7 @@ In the `final-project/` folder of your repository, next to the datasets:
 | The numbers are correct | 4 | The five answers match the dataset |
 | Edge cases are handled | 3 | Incomplete row, zero conversions, decimal comma |
 | The code is split into functions | 3 | One function per task, names that say what they do |
-| The comments are yours | 4 | They explain intent, not syntax. A wrong or empty comment costs more than a missing one |
+| The comments are yours | 4 | The four answers at the top, plus one comment per block explaining intent, not syntax. A wrong or empty comment costs more than a missing one |
 | The AI conversation is documented | 3 | It shows the errors you hit and how you solved them |
 
 Two students submitting the same code with different datasets get different results. A result that does not match your own file is the signal of code reused without being understood.

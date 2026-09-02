@@ -1,25 +1,35 @@
-"""Exercise 5.0 — Conditions
+"""Exercise 5.0 — Making the program decide
 
-Goal
-    Make the program react to what it is given.
+WHAT THE PROGRAM MUST DO
+    Ask the user for a number, then display a different message depending on which
+    range that number falls into. At least four ranges.
 
-In class
-    Ask for an age, then say whether the person is an adult or a minor.
+ANSWER THESE FIRST, in comments at the top of your file
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. What are your four ranges, what are their exact boundaries, and what does each
+       message say? Write the boundaries down before you code them.
 
-Improved version
-    Give a different message for several age groups: child, teenager,
-    adult, senior. Choose your own boundaries and state them in a comment.
+WHAT THE AI CANNOT KNOW
+    Your ranges and your boundaries. It can be an age, a budget, a satisfaction score,
+    a delivery time. Choose something with a real meaning and defend the cut-off points.
 
-Hints
-    if, elif, elif, else. The order matters: the first true test wins.
-    Remember that input() gives text, so convert the age.
-    See ../examples/conditions/if_else.py
+    Boundaries are where programs go wrong. Decide explicitly whether a value exactly
+    on the boundary belongs to the range above or the one below.
 
-Four steps
-    Ask, read, adapt, check. Test exactly on your boundary values.
+CHECK IT YOURSELF
+    Test each of your boundary values exactly: if one range ends at 25, run it with 25.
+    Then with 24 and 26. Write in a comment whether each landed where you intended.
+
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: adult or minor
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. My ranges, my boundaries, my messages:
 
 
-# TODO 2 (improved version): one message per age group
+# Your code below

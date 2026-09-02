@@ -1,27 +1,31 @@
 """Exercise 1.0 — Hello World
 
-Goal
-    Write the simplest possible program, and prove your environment works.
+WHAT THE PROGRAM MUST DO
+    Display a message of your choice, five times, with each line numbered.
 
-In class
-    Print the text: Hello, World!
+ANSWER THESE FIRST, in comments at the top of your file, before any code
+    1. What goes in?
+    2. What happens to it?
+    3. What comes out?
+    4. What message did you choose, and why that one?
 
-Improved version
-    Print the message five times, and add the iteration number to each line.
-    Expected output:
-        1 Hello, World!
-        2 Hello, World!
-        ... and so on
+WHAT THE AI CANNOT KNOW
+    The message is yours. Choose something you would actually want a program to say,
+    not "Hello, World!". Your comment has to justify it.
 
-Hints
-    print() displays text. A for loop repeats work. range(5) counts to five.
-    See ../examples/loops/for_loop.py
+CHECK IT YOURSELF
+    Count the lines your program produced. Five, not four and not six.
+    Then change the number to 3 and run it again. If you had to rewrite more than one
+    character, your program is not built the way it should be.
 
-Four steps
-    Ask, read, adapt, check. Write your own comments as you go.
+DELIVERABLE
+    This file, with your comments and your code.
 """
 
-# TODO 1: print Hello, World!
+# 1. In:
+# 2. Process:
+# 3. Out:
+# 4. My message, and why:
 
 
-# TODO 2 (improved version): print it five times, numbered
+# Your code below
