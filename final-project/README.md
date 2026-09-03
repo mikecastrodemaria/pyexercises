@@ -118,14 +118,30 @@ In the `final-project/` folder of your repository, next to the datasets:
 
 | Criterion | Points | What we look at |
 |---|---|---|
-| The program runs | 3 | It goes from start to end without crashing |
-| The numbers are correct | 4 | The five answers match the dataset |
+| The program runs | 3 | What you hand in goes from start to end without crashing |
+| The numbers are correct | 4 | 0.8 per question answered correctly, out of the five |
 | Edge cases are handled | 3 | Incomplete row, zero conversions, decimal comma |
 | The code is split into functions | 3 | One function per task, names that say what they do |
 | The comments are yours | 4 | The four answers at the top, plus one comment per block explaining intent, not syntax. A wrong or empty comment costs more than a missing one |
-| The AI conversation is documented | 3 | It shows the errors you hit and how you solved them |
+| The AI conversation is documented | 3 | It shows the errors you hit and how you solved them. Keep `CONVERSATION.md` open and paste as you go: rebuilding it in the last five minutes never works, and it is worth as much as your comments minus one |
 
 Two students submitting the same code with different datasets get different results. A result that does not match your own file is the signal of code reused without being understood.
+
+---
+
+## If you do not finish
+
+You will not all finish, and that is priced in. **An incomplete program that runs is worth far more than a complete one that crashes.**
+
+Every criterion is scored on its own. A program that reads the file, computes the indicators and asks two of the five questions correctly still collects points on the first four criteria. Nothing is all or nothing.
+
+Three reflexes for the last ten minutes:
+
+1. **Make it run.** If a part is broken and you cannot fix it, comment it out so the rest still works. A crash costs 3 points, a missing feature costs less
+2. **Say what is missing.** At the top of your file, in your own words: what you did not get to, and what you would have done. Knowing what is missing is half the skill, and it is marked as a comment, not as an excuse
+3. **Hand in anyway.** An empty submission is a zero. There is no version of this where not uploading is the better move
+
+What is never worth it: pasting a longer script from an AI in the last five minutes to look complete. The code check finds it, and the questions we ask you about your own lines find it faster.
 
 ---
 
