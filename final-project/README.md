@@ -129,6 +129,18 @@ Two students submitting the same code with different datasets get different resu
 
 ---
 
+## Submission
+
+**You hand in at the end of session 8, on Teams. Not one extra minute.**
+
+Upload the four files above to the Teams assignment. The deadline is the end of the session, and it does not move: last year the delay was used to pass copies around, so there is no longer a delay.
+
+Every submission goes through a code check. A program you cannot explain line by line is a program you did not write, whatever the AI told you.
+
+The Gradio bonus is the only thing accepted afterwards: the link to your published Space goes in the same Teams assignment, up to seven days after the session.
+
+---
+
 ## Bonus, up to 2 points on top of the 20
 
 Optional. Nobody is penalised for skipping it, and it never compensates a program that does not run.
