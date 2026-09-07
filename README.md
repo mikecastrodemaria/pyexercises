@@ -27,7 +27,6 @@ comes with a script that checks your environment for you.
 |---|---|
 | `examples/` | Working code on every topic of the course, with comments. Run it, change it, run it again |
 | `bonus/` | Optional material. Not covered in class, not graded |
-| `session-2/` | The session 2 checklist, the environment check script and the Colab fallback |
 
 Slides point to files using this structure. When a slide says
 `pyexercises / examples/lists/indexing.py`, open that file in your Codespace.
