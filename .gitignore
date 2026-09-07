@@ -33,3 +33,10 @@ venv/
 examples/files/example_result.csv
 exercises/sorted_names.txt
 bonus/machine_learning/histogram.png
+
+# Distributed on K2, deliberately kept out of the public repository:
+# a brief on a shared screen is a brief solved once and copied by everyone
+exercises/
+final-project/
+session-2/
+_to_delete/
