@@ -26,8 +26,6 @@ comes with a script that checks your environment for you.
 | Folder | What you find there |
 |---|---|
 | `examples/` | Working code on every topic of the course, with comments. Run it, change it, run it again |
-| `exercises/` | The exercises of labs 1 to 3. The task, not the answer |
-| `final-project/` | The brief and the datasets of the graded project |
 | `bonus/` | Optional material. Not covered in class, not graded |
 | `session-2/` | The session 2 checklist, the environment check script and the Colab fallback |
 
