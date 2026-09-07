@@ -19,15 +19,25 @@ Usage
 
 Setup, once, about two minutes
 ------------------------------
-1. Go to github.com/settings/personal-access-tokens and create a fine-grained token.
-   No repository access is needed. Under "Account permissions", set "Models" to
-   "Read-only". Copy the token, it is shown once.
-2. In your Codespace terminal, at the root of your repository:
+1. Create a free account on console.mistral.ai. No credit card, a phone number is
+   asked for verification. Mistral is a French company and the servers are in the EU,
+   which is the reason it was chosen for this course.
+2. In the console, go to API Keys and create a key. Copy it, it is shown once.
+3. In your Codespace terminal, at the root of your repository, next to this file:
 
-       echo 'GITHUB_TOKEN_MODELS=github_pat_your_token_here' >> .env
+       echo 'MISTRAL_API_KEY=your_key_here' >> .env
 
-   The .env file is already ignored by git. Never commit a token.
-3. Check it works:  python tutor.py --check
+   The .env file is already ignored by git. Never commit a key, and never put one in
+   a screenshot.
+4. Check it works:  python tutor.py --check
+
+Another provider? Any OpenAI-compatible endpoint works. Put TUTOR_BASE_URL,
+TUTOR_TOKEN and TUTOR_MODEL in .env and this script follows them. Groq, Cerebras and
+OpenRouter all have free tiers.
+
+If the model name is refused, ask the endpoint what it offers:
+
+    python tutor.py --models
 
 No pip install. This script only uses what Python ships with.
 """
@@ -48,10 +58,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
-# GitHub Models is the default: free with any GitHub account, nothing to install.
+# Mistral is the default: free tier, no credit card, EU servers.
+# GitHub Models was the previous default and was retired on 30 July 2026.
 # Any OpenAI-compatible endpoint works, set TUTOR_BASE_URL and TUTOR_TOKEN to switch.
-DEFAULT_BASE_URL = "https://models.github.ai/inference"
-DEFAULT_MODEL = "openai/gpt-4o-mini"
+DEFAULT_BASE_URL = "https://api.mistral.ai/v1"
+DEFAULT_MODEL = "mistral-small-latest"
 
 # The leash. One function per answer, no entry point, and this many lines at most.
 MAX_CODE_LINES = 22
@@ -149,8 +160,11 @@ def get_settings():
     model = os.environ.get("TUTOR_MODEL", DEFAULT_MODEL)
     token = (
         os.environ.get("TUTOR_TOKEN")
-        or os.environ.get("GITHUB_TOKEN_MODELS")
+        or os.environ.get("MISTRAL_API_KEY")
+        or os.environ.get("GROQ_API_KEY")
+        or os.environ.get("OPENROUTER_API_KEY")
         or os.environ.get("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
+        or os.environ.get("GITHUB_TOKEN_MODELS")
         or ""
     )
     return base_url, model, token
@@ -262,6 +276,24 @@ def leash(answer, budget=MAX_CODE_LINES):
 # The call
 # --------------------------------------------------------------------------------
 
+def list_models(base_url, token):
+    """Ask an OpenAI-compatible endpoint which models it exposes."""
+    request = urllib.request.Request(
+        base_url + "/models",
+        headers={"Authorization": "Bearer " + token},
+        method="GET",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+            body = json.loads(response.read().decode("utf-8"))
+    except Exception as error:  # noqa: BLE001
+        return "[error] %s: %s" % (type(error).__name__, error)
+    names = sorted(item.get("id", "?") for item in body.get("data", []))
+    if not names:
+        return "[error] the endpoint answered, but listed no model."
+    return "\n".join(names)
+
+
 def ask_model(messages, base_url, model, token):
     payload = json.dumps({
         "model": model,
@@ -286,8 +318,16 @@ def ask_model(messages, base_url, model, token):
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", "replace")[:300]
         if error.code in (401, 403):
-            return ("[setup] Your token was refused. Check that it has the Models "
-                    "permission set to Read-only, and that .env holds the right value.\n"
+            return ("[setup] Your key was refused. Check that .env holds the right "
+                    "value, on one line, with no space around the = sign.\n" + detail)
+        if error.code in (400, 404):
+            return ("[setup] The endpoint refused the request, most often because the "
+                    "model name is wrong for this provider. Ask it what it offers:\n"
+                    "    python tutor.py --models\n"
+                    "then put the one you want in .env as TUTOR_MODEL=<name>\n" + detail)
+        if error.code == 410:
+            return ("[setup] This endpoint is gone. That is what happened to GitHub "
+                    "Models, retired on 30 July 2026. Change TUTOR_BASE_URL in .env.\n"
                     + detail)
         if error.code == 429:
             return ("[quota] You have hit the free rate limit. Wait a minute, and in "
@@ -365,6 +405,8 @@ def main():
     parser.add_argument("--log", default=str(ROOT / "CONVERSATION.md"),
                         help="where the exchanges are written")
     parser.add_argument("--check", action="store_true", help="test the setup and exit")
+    parser.add_argument("--models", action="store_true",
+                        help="list the models this endpoint offers, and exit")
     args = parser.parse_args()
 
     base_url, model, token = get_settings()
@@ -374,6 +416,11 @@ def main():
         print(__doc__)
         print("No token found. Follow the setup above, then run: python tutor.py --check")
         return 1
+
+    if args.models:
+        print("endpoint : %s\n" % base_url)
+        print(list_models(base_url, token))
+        return 0
 
     if args.check:
         print("endpoint : %s\nmodel    : %s\ntoken    : %s...\n"

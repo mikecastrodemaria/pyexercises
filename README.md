@@ -85,11 +85,18 @@ python tutor.py --check                       test your setup
 python tutor.py                               start a conversation
 python tutor.py "how do I read a semicolon csv"
 python tutor.py --log CONVERSATION.md         write the log where you want it
+python tutor.py --models                      what this endpoint offers
 ```
 
-Setup takes two minutes and is explained at the top of `tutor.py`. You create a
-GitHub token with the Models permission, you paste it into `.env`, and that is all.
-It costs nothing and needs no account beyond the GitHub one you already have.
+Setup takes two minutes and is explained at the top of `tutor.py`. You create a free
+account on [console.mistral.ai](https://console.mistral.ai), generate an API key, and
+paste it into a `.env` file next to `tutor.py`. No credit card. Mistral is a French
+company with servers in the EU, which is why it was chosen here: where your data goes
+is a selection criterion, not a detail.
+
+Any other OpenAI-compatible provider works, Groq, Cerebras and OpenRouter all have free
+tiers. Set `TUTOR_BASE_URL`, `TUTOR_TOKEN` and `TUTOR_MODEL` in `.env` and the script
+follows them.
 
 Copilot Chat, inside your Codespace, follows the same rules: they are written in
 `.github/copilot-instructions.md` and applied automatically.
