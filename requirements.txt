@@ -4,6 +4,7 @@
 matplotlib          # charts, used by the bonus material
 numpy               # numbers, used by the bonus material
 gradio              # turns a function into a web page, for the optional bonus of the final project
+streamlit           # the other way to turn a script into a web page, examples/interfaces/
 
 # cowsay is deliberately NOT here. It is the library the students install by hand
 # in session 2, so that they see what installing something actually does.
