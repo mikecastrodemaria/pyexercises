@@ -26,9 +26,8 @@ through the network to whoever opens the link.
 That difference is the whole lesson of this folder, and it decides which tool you
 pick: who has to see the result, and where are they?
 
-## Which one for the final project bonus
+## Which one should you pick
 
-Either web option works. Gradio is the shortest route: one function, one page.
-Streamlit is more comfortable once you want several blocks, a table and a chart.
-Both publish for free, Gradio on Hugging Face Spaces, Streamlit on Streamlit
-Community Cloud.
+Gradio is the shortest route: one function, one page. Streamlit is more comfortable
+once you want several blocks, a table and a chart. Both publish for free, Gradio on
+Hugging Face Spaces, Streamlit on Streamlit Community Cloud.
