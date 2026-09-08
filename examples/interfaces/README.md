@@ -5,6 +5,7 @@ only the last box, the output, does.
 
 | File | Technology | Where it runs | Install |
 |---|---|---|---|
+| `0_localhost_and_ports.py` | The vocabulary first: address, port, localhost | Everywhere | none, standard library |
 | `1_tkinter_window.py` | tkinter, a desktop window | Your own machine only | none, it ships with Python |
 | `2_gradio_page.py` | Gradio, a web page | Laptop and Codespace | `pip install gradio`, already done here |
 | `3_streamlit_page.py` | Streamlit, a web page | Laptop and Codespace | `pip install streamlit`, already done here |
@@ -12,6 +13,7 @@ only the last box, the output, does.
 ## How to run them
 
 ```
+python 0_localhost_and_ports.py     then open http://127.0.0.1:8000
 python 1_tkinter_window.py          a window opens, if you have a desktop
 python 2_gradio_page.py             then open the link, or the forwarded port
 streamlit run 3_streamlit_page.py   note the command, it is not python
